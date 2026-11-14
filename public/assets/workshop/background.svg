@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+ <defs><linearGradient id="room" x2="0" y2="1"><stop stop-color="#5a493b"/><stop offset="1" stop-color="#2f2925"/></linearGradient><radialGradient id="lamp"><stop stop-color="#f1ca82" stop-opacity=".54"/><stop offset="1" stop-color="#f1ca82" stop-opacity="0"/></radialGradient></defs>
+ <rect width="1600" height="900" fill="url(#room)"/><path d="M0 0h1600v118H0z" fill="#213733"/><circle cx="575" cy="310" r="330" fill="url(#lamp)"/>
+ <path d="M0 690h1600v210H0z" fill="#261f1b"/><path d="m0 680 1600-38v62L0 742z" fill="#785942" opacity=".6"/>
+ <g fill="none" stroke="#c5aa7a" stroke-opacity=".17"><path d="M1040 127v408M1260 127v470M1480 127v424"/><path d="M920 235h680M920 417h680"/></g>
+</svg>

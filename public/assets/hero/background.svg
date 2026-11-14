@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+ <defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#284d4d"/><stop offset=".58" stop-color="#789b87"/><stop offset="1" stop-color="#d2cba9"/></linearGradient><radialGradient id="sun"><stop stop-color="#fff0bd"/><stop offset=".65" stop-color="#e4bd79"/><stop offset="1" stop-color="#e4bd79" stop-opacity="0"/></radialGradient><filter id="blur"><feGaussianBlur stdDeviation="18"/></filter></defs>
+ <path fill="url(#sky)" d="M0 0h1600v900H0z"/>
+ <circle cx="1185" cy="180" r="154" fill="url(#sun)"/><circle cx="1185" cy="180" r="66" fill="#f3d89f" opacity=".9"/>
+ <g fill="#e9e5ce" opacity=".25" filter="url(#blur)"><path d="M20 190c130-71 268-25 351 13 85 38 166 24 257 3-41 82-164 96-292 69S92 264 20 288z"/><path d="M925 325c109-58 266-49 418 16 60 26 148 27 257-2v83c-134 35-287 12-387-19-116-36-213-22-288 4z"/></g>
+ <path d="M0 530C162 401 289 400 410 474c95 58 158 39 270-49 118-93 219-100 329-23 111 78 213 104 347 31 89-49 170-60 244-25v492H0z" fill="#477071" opacity=".74"/>
+ <path d="M0 606c170-76 301-87 430-18 106 56 205 40 334-23 182-88 292-61 431 27 128 81 242 47 405-57v365H0z" fill="#31595a"/>
+</svg>

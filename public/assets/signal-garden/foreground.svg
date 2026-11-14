@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+ <defs><filter id="glow"><feGaussianBlur stdDeviation="7"/></filter></defs>
+ <path d="M0 799c210-95 398-77 554 41 98 74 211 70 328 10 215-109 450-107 718-19v69H0z" fill="#0b2422"/>
+ <g stroke="#6e9c80" stroke-width="5" fill="none"><path d="M59 900c14-99 35-167 96-229"/><path d="M1541 900c-7-96-37-164-91-218"/><path d="M1110 900c-4-97 17-164 69-227"/></g>
+ <g fill="#e4bd79" opacity=".3" filter="url(#glow)"><circle cx="155" cy="671" r="34"/><circle cx="1450" cy="682" r="35"/><circle cx="1179" cy="673" r="28"/></g>
+ <g fill="#f0d6a1"><circle cx="155" cy="671" r="8"/><circle cx="1450" cy="682" r="8"/><circle cx="1179" cy="673" r="7"/></g>
+ <g fill="#789b87"><ellipse cx="80" cy="775" rx="23" ry="55" transform="rotate(-35 80 775)"/><ellipse cx="1506" cy="766" rx="25" ry="60" transform="rotate(31 1506 766)"/><ellipse cx="1138" cy="783" rx="20" ry="48" transform="rotate(-28 1138 783)"/></g>
+</svg>
