@@ -107,6 +107,7 @@ main { overflow: clip; }
 .horizon-card.is-active { filter: saturate(1) brightness(1); }
 .horizon-card button { position: relative; width: 100%; height: 100%; overflow: hidden; padding: 0; border: 1px solid rgba(241,233,216,.2); border-radius: 38px 38px 38px 7px; background: #253f3c; color: var(--cream-100); text-align: left; cursor: pointer; box-shadow: 0 35px 90px rgba(13,8,5,.42); }
 .horizon-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 1s var(--ease-out); pointer-events: none; }
+.horizon-card img[src$=".png"] { object-fit: contain; padding: clamp(1.25rem, 4vw, 3.5rem); background: linear-gradient(145deg, #f6f1e7, #e9e0d1); }
 .horizon-card.is-active:hover img { transform: scale(1.035); }
 .horizon-card__wash { position: absolute; inset: 0; background: linear-gradient(180deg, transparent 30%, rgba(10,23,23,.16) 48%, rgba(10,21,21,.96) 100%); }
 .horizon-card__content { position: absolute; left: 0; right: 0; bottom: 0; display: grid; gap: .45rem; padding: 2rem; }
@@ -172,6 +173,7 @@ footer a { text-underline-offset: .3rem; }
 .icon-button svg { width: 18px; }
 .project-detail__art { min-height: 520px; overflow: hidden; background: #203f3b; }
 .project-detail__art img { width: 100%; height: 100%; object-fit: cover; }
+.project-detail__art img[src$=".png"] { object-fit: contain; padding: clamp(2rem, 5vw, 5rem); background: linear-gradient(145deg, #f6f1e7, #ded3c1); }
 .project-detail__content { padding: clamp(2rem, 5vw, 4.5rem); }
 .project-detail__content h2 { margin: .6rem 0 1rem; font-family: var(--serif); font-size: clamp(2.4rem, 5vw, 4.7rem); font-weight: 400; line-height: .95; }
 .project-detail__lead { color: rgba(241,233,216,.72); font-family: var(--serif); font-size: 1.05rem; }
