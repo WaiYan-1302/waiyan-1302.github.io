@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: 'Lin',
   title: 'The Living Sketchbook',
-  subtitle: 'A Signal Garden',
+  subtitle: 'Ideas in Motion',
   intro: 'Exploring the space between technology, imagination, and creativity.',
   email: 'your-email@example.com',
   social: {
@@ -9,17 +9,22 @@ export const siteConfig = {
     linkedin: '',
   },
   interests: [
-    'Signal processing',
-    'Brain–computer interfaces',
-    'Creative coding',
+    'Computer science',
+    'Creative projects',
+    'Social networking',
     'Music & arrangement',
-    'Visual storytelling',
+    'Interdisciplinary learning',
   ],
+  overview: {
+    introduction: 'An enthusiast in computer science, creative projects, social networking, and music.',
+    education: 'Undergraduate student at Kyushu University, Faculty of Interdisciplinary Science and Innovation (共創学部).',
+    community: 'Vice President of the Fukuoka International Students Association.',
+  },
 } as const;
 
 export const navigation = [
   { label: 'Home', href: '#home' },
-  { label: 'Research', href: '#research' },
+  { label: 'Overview', href: '#overview' },
   { label: 'Projects', href: '#projects' },
   { label: 'Music', href: '#music' },
   { label: 'About', href: '#about' },

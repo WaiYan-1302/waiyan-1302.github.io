@@ -1,4 +1,4 @@
-export type SceneName = 'hero' | 'signal-garden' | 'workshop' | 'resonance-lake' | 'observatory';
+export type SceneName = 'hero' | 'overview' | 'workshop' | 'resonance-lake' | 'observatory';
 
 export interface SceneLayerAsset {
   src: string;
@@ -12,7 +12,7 @@ export const sceneAssets: Record<SceneName, SceneLayerAsset[]> = {
     { src: '/assets/hero/midground.svg', depth: 0.2 },
     { src: '/assets/hero/foreground.svg', depth: 0.38 },
   ],
-  'signal-garden': [
+  overview: [
     { src: '/assets/signal-garden/background.svg', depth: 0.06 },
     { src: '/assets/signal-garden/midground.svg', depth: 0.16 },
     { src: '/assets/signal-garden/foreground.svg', depth: 0.3 },

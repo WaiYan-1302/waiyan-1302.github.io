@@ -13,7 +13,7 @@ export function Hero() {
           <h1 id="hero-title">Hello, I’m <em>{siteConfig.name}.</em></h1>
           <p>{siteConfig.intro}</p>
           <div className="hero__actions">
-            <a className="button" href="#research">Explore my work <ArrowRight /></a>
+            <a className="button" href="#overview">Begin the journey <ArrowRight /></a>
             <a className="text-link" href="#contact">Contact me</a>
           </div>
         </div>

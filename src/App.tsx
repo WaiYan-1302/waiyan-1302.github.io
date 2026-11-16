@@ -8,7 +8,7 @@ import { usePrefersReducedMotion } from './hooks/usePrefersReducedMotion';
 import { Hero } from './sections/Hero/Hero';
 import { Observatory } from './sections/Observatory/Observatory';
 import { ResonanceLake } from './sections/ResonanceLake/ResonanceLake';
-import { SignalGarden } from './sections/SignalGarden/SignalGarden';
+import { Overview } from './sections/Overview/Overview';
 import { Workshop } from './sections/Workshop/Workshop';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -35,7 +35,7 @@ export default function App() {
           gsap.from(item, { y: 42, opacity: 0, duration: 0.9, ease: 'power3.out', scrollTrigger: { trigger: item, start: 'top 88%', once: true } });
         });
       });
-      gsap.to('.signal-vines path', { strokeDashoffset: 0, duration: 1.8, ease: 'none', scrollTrigger: { trigger: '.signal-vines', start: 'top 75%', end: 'bottom 55%', scrub: 0.8 } });
+      gsap.from('.project-carousel', { opacity: 0, y: 24, duration: 1, ease: 'power3.out', scrollTrigger: { trigger: '.project-carousel', start: 'top 82%', once: true } });
       gsap.to('.workshop__lamp-glow', { opacity: 0.82, scale: 1.08, duration: 3.2, repeat: -1, yoyo: true, ease: 'sine.inOut' });
     });
     return () => context.revert();
@@ -61,7 +61,7 @@ export default function App() {
       <SectionNavigation />
       <main id="main">
         <Hero />
-        <SignalGarden onOpen={setActiveProject} />
+        <Overview />
         <Workshop onOpen={setActiveProject} />
         <ResonanceLake onOpen={setActiveProject} />
         <Observatory />

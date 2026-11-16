@@ -1,4 +1,4 @@
-# The Living Sketchbook — A Signal Garden
+# The Living Sketchbook — Ideas in Motion
 
 A cinematic, illustrated portfolio for Lin: an interdisciplinary university student exploring engineering, creative technology, music, and visual storytelling.
 

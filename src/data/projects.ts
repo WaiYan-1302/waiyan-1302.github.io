@@ -18,11 +18,11 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: 'eeg-signal-lab',
-    title: 'EEG / Signal Lab',
+    id: 'signal-sensor-studies',
+    title: 'Signal & Sensor Studies',
     category: 'research',
-    shortDescription: 'A learning space for filtering, visualizing, and understanding biosignals.',
-    fullDescription: 'A work-in-progress collection of small experiments around EEG signals, noise, filtering, and visual interpretation. This entry is intentionally a placeholder for documented lab notes and future prototypes.',
+    shortDescription: 'A learning space for filtering, visualizing, and understanding signals from the physical world.',
+    fullDescription: 'A work-in-progress collection of small experiments around sensors, noise, filtering, and visual interpretation. This entry is intentionally a placeholder for documented lab notes and future prototypes.',
     technologies: ['Python', 'Signal processing', 'Data visualization'],
     status: 'Exploring',
     thumbnail: '/assets/projects/signal-study.svg',
@@ -42,19 +42,6 @@ export const projects: Project[] = [
     galleryImages: ['/assets/projects/circuit-bloom.svg'],
     challenges: 'Designing reliable prototypes while preserving room for playful discovery.',
     outcomes: 'Placeholder — future build logs will collect schematics, measurements, and reflections.',
-  },
-  {
-    id: 'bci-field-notes',
-    title: 'BCI Field Notes',
-    category: 'research',
-    shortDescription: 'Reading notes and speculative interfaces around brain–computer interaction.',
-    fullDescription: 'A research notebook for questions about brain–computer interfaces, humane interaction, and the translation of subtle signals into meaningful experiences.',
-    technologies: ['Research', 'Interface design', 'Prototyping'],
-    status: 'Concept',
-    thumbnail: '/assets/projects/neural-seed.svg',
-    galleryImages: ['/assets/projects/neural-seed.svg'],
-    challenges: 'Balancing technical possibility with careful, human-centered questions.',
-    outcomes: 'Placeholder — this will become a curated trail of references and prototype sketches.',
   },
   {
     id: 'lingoloop',

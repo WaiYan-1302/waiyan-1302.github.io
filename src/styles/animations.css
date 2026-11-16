@@ -5,6 +5,7 @@
 @keyframes soundBar { from { transform: scaleY(.55); opacity: .35; } to { transform: scaleY(1.15); opacity: .8; } }
 @keyframes fadeIn { from { opacity: 0; } }
 @keyframes panelIn { from { opacity: 0; transform: translateY(30px) scale(.98); } }
+@keyframes orbitDrift { from { transform: translate(-50%,-50%) rotate(-4deg) scale(.98); } to { transform: translate(-50%,-50%) rotate(5deg) scale(1.03); } }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
