@@ -8,9 +8,10 @@ export interface SceneLayerAsset {
 
 export const sceneAssets: Record<SceneName, SceneLayerAsset[]> = {
   hero: [
-    { src: '/assets/hero/background.svg', depth: 0.08 },
-    { src: '/assets/hero/midground.svg', depth: 0.2 },
-    { src: '/assets/hero/foreground.svg', depth: 0.38 },
+    { src: '/assets/hero/layers/mountain_range.png', depth: 0.03, className: 'hero-layer hero-layer--mountains' },
+    { src: '/assets/hero/layers/back_scene.png', depth: 0.08, className: 'hero-layer hero-layer--back-scene' },
+    { src: '/assets/hero/layers/foreground.png', depth: 0.14, className: 'hero-layer hero-layer--foreground' },
+    { src: '/assets/hero/layers/me_avatar.png', depth: 0.18, className: 'hero-layer hero-layer--avatar' },
   ],
   overview: [
     { src: '/assets/signal-garden/background.svg', depth: 0.06 },

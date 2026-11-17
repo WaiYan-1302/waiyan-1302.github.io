@@ -28,12 +28,17 @@ main { overflow: clip; }
 .illustrated-scene { position: relative; min-height: 760px; isolation: isolate; overflow: hidden; }
 .hero .illustrated-scene { height: 100svh; min-height: 680px; }
 .scene-art { position: absolute; inset: 0; z-index: -2; }
-.scene-layer { position: absolute; inset: -4%; width: 108%; height: 108%; object-fit: cover; object-position: center; pointer-events: none; user-select: none; will-change: transform; }
+.scene-layer { position: absolute; inset: -4%; width: 108%; height: 108%; object-fit: cover; object-position: center; pointer-events: none; user-select: none; will-change: transform, translate, scale, rotate; }
 .scene-layer--0 { z-index: 1; }
 .scene-layer--1 { z-index: 2; }
 .scene-layer--2 { z-index: 3; }
+.hero .illustrated-scene::after { content: ''; position: absolute; inset: 0; z-index: 0; pointer-events: none; background: linear-gradient(90deg, transparent 35%, rgba(15,31,32,.12) 52%, rgba(10,26,27,.72) 100%), linear-gradient(0deg, rgba(11,29,29,.48), transparent 40%); }
+.hero-layer--mountains { z-index: 1; scale: 1.035; animation: heroBaseBreath 18s ease-in-out infinite alternate; }
+.hero-layer--back-scene { z-index: 2; animation: heroLandscapeDrift 14s ease-in-out infinite alternate; }
+.hero-layer--foreground { z-index: 3; animation: heroForegroundSway 10s ease-in-out infinite alternate; }
+.hero-layer--avatar { z-index: 4; animation: heroAvatarFloat 5.5s ease-in-out infinite alternate; }
 .hero::after { content: ''; position: absolute; inset: auto 0 0; height: 180px; background: linear-gradient(transparent, var(--forest-900)); pointer-events: none; z-index: 4; }
-.hero__copy { position: absolute; z-index: 5; left: max(var(--page-x), calc((100vw - var(--max-width))/2 + 4.5rem)); top: 50%; width: min(670px, 54vw); transform: translateY(-46%); text-shadow: 0 2px 30px rgba(11,29,29,.45); }
+.hero__copy { position: absolute; z-index: 5; right: max(var(--page-x), calc((100vw - var(--max-width))/2 + 4.5rem)); top: 50%; width: min(610px, 46vw); transform: translateY(-46%); text-shadow: 0 2px 30px rgba(11,29,29,.78); }
 .hero__kicker, .eyebrow { display: flex; align-items: center; gap: .65rem; color: var(--gold-200); font-size: .7rem; letter-spacing: .18em; text-transform: uppercase; }
 .hero__kicker span { width: 2.4rem; height: 1px; background: var(--gold-400); }
 .hero h1 { margin: .7rem 0 1rem; max-width: 700px; font-family: var(--serif); font-size: clamp(3.6rem, 7.5vw, 8.4rem); font-weight: 400; line-height: .88; letter-spacing: -.055em; }
@@ -191,7 +196,7 @@ footer a { text-underline-offset: .3rem; }
   .site-header nav.nav-open { transform: translateY(0); }
   .site-header nav a { display: flex; align-items: baseline; gap: 1rem; padding: .75rem 0; border-bottom: 1px solid rgba(241,233,216,.1); font-family: var(--serif); font-size: clamp(1.8rem, 8vw, 3rem); }
   .site-header nav a span { display: block; font-family: var(--sans); font-size: .6rem; color: var(--gold-400); }
-  .hero__copy { width: min(680px, calc(100vw - 2 * var(--page-x))); top: 47%; }
+  .hero__copy { width: min(520px, 52vw); top: 47%; }
   .hero__field-note { display: none; }
   .scene-heading { grid-template-columns: 1fr; gap: 1.5rem; }
   .scene-heading .eyebrow { margin: 0; }
@@ -208,6 +213,9 @@ footer a { text-underline-offset: .3rem; }
   :root { --header-h: 66px; }
   .brand small { display: none; }
   .hero .illustrated-scene { min-height: 720px; }
+  .hero .illustrated-scene::after { background: linear-gradient(0deg, rgba(11,29,29,.82), rgba(11,29,29,.12) 58%, transparent 82%); }
+  .hero__copy { left: var(--page-x); right: var(--page-x); top: auto; bottom: 5.8rem; width: auto; transform: none; }
+  .hero-layer--mountains, .hero-layer--back-scene, .hero-layer--foreground, .hero-layer--avatar { object-position: 42% center; }
   .hero h1 { font-size: clamp(3.5rem, 18vw, 5.2rem); }
   .hero__copy > p:not(.hero__kicker) { max-width: 92%; font-size: 1.05rem; }
   .hero__actions { align-items: flex-start; gap: 1rem; }

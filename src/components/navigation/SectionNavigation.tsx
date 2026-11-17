@@ -32,9 +32,9 @@ export function SectionNavigation() {
 
   return (
     <header className="site-header">
-      <a className="brand" href="#home" aria-label="The Living Sketchbook, home">
+      <a className="brand" href="#home" aria-label="Lin, home">
         <svg viewBox="0 0 42 42" aria-hidden="true"><path d="M21 36C12 30 7 22 9 11c9 1 16 7 18 16M20 35c-1-13 5-23 15-27 2 12-3 23-15 27Z" /></svg>
-        <span><strong>Lin</strong><small>The Living Sketchbook</small></span>
+        <span><strong>Lin</strong></span>
       </a>
       <button className="menu-button" type="button" aria-expanded={open} aria-controls="site-nav" onClick={() => setOpen(!open)}>
         <span>{open ? 'Close' : 'Menu'}</span>{open ? <X /> : <Menu />}

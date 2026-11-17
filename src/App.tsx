@@ -48,8 +48,9 @@ export default function App() {
     const move = (event: PointerEvent) => {
       const x = (event.clientX / window.innerWidth - 0.5) * 2;
       const y = (event.clientY / window.innerHeight - 0.5) * 2;
-      hero.querySelectorAll<HTMLElement>('.scene-layer').forEach((layer, index) => {
-        gsap.to(layer, { x: x * (index + 1) * -5, y: y * (index + 1) * -3, duration: 1.4, ease: 'power2.out', overwrite: 'auto' });
+      hero.querySelectorAll<HTMLElement>('.scene-layer').forEach((layer) => {
+        const depth = Number(layer.style.getPropertyValue('--depth')) || 0.1;
+        gsap.to(layer, { x: x * depth * -32, y: y * depth * -18, duration: 1.4, ease: 'power2.out', overwrite: 'auto' });
       });
     };
     window.addEventListener('pointermove', move);

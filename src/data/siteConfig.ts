@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: 'Lin',
-  title: 'The Living Sketchbook',
+  title: 'Welcome To My Sketch Book',
   subtitle: 'Ideas in Motion',
   intro: 'Exploring the space between technology, imagination, and creativity.',
   email: 'your-email@example.com',
@@ -28,5 +28,4 @@ export const navigation = [
   { label: 'Projects', href: '#projects' },
   { label: 'Music', href: '#music' },
   { label: 'About', href: '#about' },
-  { label: 'Contact', href: '#contact' },
 ] as const;

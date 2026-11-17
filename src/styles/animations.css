@@ -6,6 +6,10 @@
 @keyframes fadeIn { from { opacity: 0; } }
 @keyframes panelIn { from { opacity: 0; transform: translateY(30px) scale(.98); } }
 @keyframes orbitDrift { from { transform: translate(-50%,-50%) rotate(-4deg) scale(.98); } to { transform: translate(-50%,-50%) rotate(5deg) scale(1.03); } }
+@keyframes heroBaseBreath { from { scale: 1.035; } to { scale: 1.065; } }
+@keyframes heroLandscapeDrift { from { translate: -.35% .25%; } to { translate: .45% -.35%; } }
+@keyframes heroForegroundSway { from { translate: -.22% 0; } to { translate: .3% -.18%; } }
+@keyframes heroAvatarFloat { from { translate: 0 2px; rotate: -.15deg; } to { translate: 0 -7px; rotate: .18deg; } }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
