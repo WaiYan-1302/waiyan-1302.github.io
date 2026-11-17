@@ -10,6 +10,11 @@
 @keyframes heroLandscapeDrift { from { translate: -.35% .25%; } to { translate: .45% -.35%; } }
 @keyframes heroForegroundSway { from { translate: -.22% 0; } to { translate: .3% -.18%; } }
 @keyframes heroAvatarFloat { from { translate: 0 2px; rotate: -.15deg; } to { translate: 0 -7px; rotate: .18deg; } }
+@keyframes cursorRipple {
+  0% { width: 12px; height: 5px; opacity: 0; filter: blur(0); }
+  14% { opacity: .72; }
+  100% { width: 145px; height: 58px; opacity: 0; filter: blur(.45px); transform: translate(-50%,-50%) rotate(calc(var(--ripple-tilt) + 7deg)); }
+}
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }

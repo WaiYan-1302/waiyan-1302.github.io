@@ -1,6 +1,7 @@
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useEffect, useState } from 'react';
+import { CursorRipples } from './components/effects/CursorRipples';
 import { SectionNavigation } from './components/navigation/SectionNavigation';
 import { ProjectDetail } from './components/projects/ProjectDetail';
 import type { Project } from './data/projects';
@@ -59,6 +60,7 @@ export default function App() {
 
   return (
     <>
+      <CursorRipples />
       <SectionNavigation />
       <main id="main">
         <Hero />
