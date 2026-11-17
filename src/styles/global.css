@@ -31,7 +31,7 @@ main { overflow: clip; }
 .hero-layer--mountains { z-index: 1; scale: 1.035; animation: heroBaseBreath 18s ease-in-out infinite alternate; }
 .hero-layer--back-scene { z-index: 2; animation: heroLandscapeDrift 14s ease-in-out infinite alternate; }
 .hero-layer--foreground { z-index: 3; animation: heroForegroundSway 10s ease-in-out infinite alternate; }
-.hero-layer--avatar { inset: auto; left: 12%; bottom: 2%; width: 54%; height: 54%; z-index: 4; object-fit: cover; animation: heroAvatarFloat 5.5s ease-in-out infinite alternate; }
+.hero-layer--avatar { inset: auto; left: 4%; bottom: 2%; width: 70.2%; height: 70.2%; z-index: 4; object-fit: cover; animation: heroAvatarFloat 5.5s ease-in-out infinite alternate; }
 .cursor-ripples { position: fixed; z-index: 900; inset: 0; overflow: hidden; pointer-events: none; }
 .cursor-ripple { --ripple-tilt: 0deg; position: absolute; width: 15px; height: 7px; border: 1px solid rgba(222,242,231,.28); border-radius: 46% 54% 43% 57%; opacity: 0; transform: translate(-50%,-50%) rotate(var(--ripple-tilt)); box-shadow: 0 0 10px rgba(190,225,209,.08), inset 0 0 7px rgba(255,255,255,.05); animation: cursorRipple 1.5s cubic-bezier(.16,.72,.24,1) forwards; }
 .cursor-ripple::before, .cursor-ripple::after { content: ''; position: absolute; inset: 22%; border: 1px solid rgba(240,214,161,.2); border-radius: 58% 42% 54% 46%; }
